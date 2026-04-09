@@ -19,7 +19,6 @@ Thus far I have found that home teams win the game roughly 58% of the time and t
 # Installation
 There are no API keys required at the moment. 
 
-- _describe what special python packages you have used_
 The following python packages were used: requests, pandas, sklearn. 
 I used pandas to read play-by-play CSVs. 
 I used requests to fetch data from ESPN.

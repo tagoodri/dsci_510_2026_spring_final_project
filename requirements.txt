@@ -1,0 +1,7 @@
+pandas
+matplotlib
+scikit-learn
+kaggle
+requests
+seaborn
+python-dotenv

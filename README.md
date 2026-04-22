@@ -1,5 +1,5 @@
 # Live NBA Outcome Prediction
-This project aims to predict the outcome of an NBA game, utilizing both historical and real-time data. Crucial data points include score, home court advantage, time remaining, and team salaries as a live probability is diplayed of the possible outcomes with a logistic regression model that is trained with over 3 million basketball plays.
+This project aims to predict the outcome of an NBA game, utilizing both historical and real-time data. Crucial data points include score, home court advantage, time remaining, and team salaries as a live probability is displayed of the possible outcomes with a logistic regression model that is trained with over 3 million basketball plays.
 
 # Data sources
 I am currently using Kaggle NBA play-by-play data from seasons ranging from 2015-2021. [Kaggle NBA PBP](https://www.kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019)

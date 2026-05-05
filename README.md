@@ -14,10 +14,10 @@ I also used ESPN play-by-play data. As a test thus far, I fetched the [Lakers vs
 | 3 | Kaggle Historical NBA Play-by-Play (2015-2021) | kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019 | File | Box score, player stats, play-by-play, game outcome | CSV | 3,000,000+ |
 
 # Analysis
-A logistic regression model is trained with over 3,000,000 NBA play-by-play data points to provide accurate win probabilities for NBA games as they happen in real time, with key features including score margin and time remaining.  
+A logistic regression model is trained with over 3,000,000 NBA play-by-play data points to provide accurate win probabilities for NBA games as they happen in real time, with key features including score margin, time remaining, and payroll difference.  
 
 # Results 
-Thus far I have found that home teams win the game roughly 58% of the time and that there is a somewhat strong correlation between scoring margin and being the home team at 0.53. I've also learned that home teams win 74.9% of the time when leading at half time, and 90.8% when winning at the start of the fourth quarter. I've also gathered that the team with the higher payroll (team salary) wonly roughly 58% of the games during the 2015 to 2021 NBA seasons. 
+Thus far I have found that home teams win the game roughly 58% of the time and that there is a somewhat strong correlation between scoring margin and being the home team at 0.53. I've also learned that home teams win 74.9% of the time when leading at half time, and 90.8% when winning at the start of the fourth quarter. I've also gathered that the team with the higher payroll (team salary) won only roughly 58% of the games during the 2015 to 2021 NBA seasons. 
 
 # Installation
 There are no API keys required at the moment. 

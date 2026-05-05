@@ -1,4 +1,4 @@
-#  Introduction - Live NBA Outcome Prediction
+# Introduction - Live NBA Outcome Prediction
 This project aims to predict the outcome of an NBA game. I utilize both historical and real-time data. Crucial data points include score, home court advantage, time remaining, and team salaries as a live probability is diplayed of the possible outcomes with a logistic regression model that is trained with over 3 million basketball plays.
 
 # Data sources

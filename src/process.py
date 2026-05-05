@@ -53,7 +53,7 @@ def process_payroll(pbp_df, payroll_df):
 
 
     # trying to solve pandas renaming issue
-    # *** AI USE: had issues with merges, I then prompted AI (Claude) and I learned that pandas creates extra suffixes ***
+    # *** AI GENERATED, AI USE: had issues with merges, I then prompted AI (Claude) and I learned that pandas creates extra suffixes ***
     pbp_df = pbp_df.rename(columns={'HomePayroll_x': 'HomePayroll'})
     pbp_df = pbp_df.drop(columns=['HomePayroll_y'], errors='ignore')
     

@@ -4,7 +4,7 @@ from analyze import (show_correlations, train_model,
                     plot_correlation_heatmap, plot_win_rate_by_quarter,
                     plot_home_away_wins, plot_lead_win_rate, plot_upset_rate, plot_payroll_vs_winrate, plot_winrate_by_payroll_tier, analyze_game)
 
-print("Starting NBA win probability!")
+print("Starting NBA win probability! . . . ")
 #loading data
 pbp_raw = load_playbyplay()
 payroll = load_payroll()

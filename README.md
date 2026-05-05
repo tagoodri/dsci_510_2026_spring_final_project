@@ -1,4 +1,4 @@
-# Live NBA Outcome Prediction
+#  Introduction - Live NBA Outcome Prediction
 This project aims to predict the outcome of an NBA game. I utilize both historical and real-time data. Crucial data points include score, home court advantage, time remaining, and team salaries as a live probability is diplayed of the possible outcomes with a logistic regression model that is trained with over 3 million basketball plays.
 
 # Data sources
@@ -13,7 +13,8 @@ I also used ESPN play-by-play data. As a test thus far, I fetched the [Lakers vs
 | 2 | Kaggle NBA Players & Team Data | basketball-reference.com/leagues/NBA_2026_games | File | teams, payrolls, seasons, | CSV | 180 |
 | 3 | Kaggle Historical NBA Play-by-Play (2015-2021) | kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019 | File | Box score, player stats, play-by-play, game outcome | CSV | 3,000,000+ |
 
-
+ # Analysis
+A logistic regression model is trained with over 3,000,000 NBA play-by-play data points to provide accurate win probabilities for NBA games as they happen in real time, with key features including score margin and time remaining.  
 # Results 
 Thus far I have found that home teams win the game roughly 58% of the time and that there is a somewhat strong correlation between scoring margin and being the home team at 0.53. I've also learned that home teams win 74.9% of the time when leading at half time, and 90.8% when winning at the start of the fourth quarter. I've also gathered that the team with the higher payroll (team salary) wonly roughly 58% of the games during the 2015 to 2021 NBA seasons. 
 
@@ -25,15 +26,19 @@ I used pandas to read play-by-play CSVs.
 I used requests to fetch data from ESPN.
 I used sklearn to help with model training and creating the logistic regression model. 
 I used matplotlib and seaborn to generate plots. 
+Claude AI was also used to assist in parts of this project. They are labeled as such with #AI Generated notes in the code. 
 
-# Running analysis 
+# How to run
+1. Install all requirements from `requirements.txt`
 
-From `src/` directory run:
+2. Download  NBA Play-by-Play Data, 2015-2021 NBA Players & Team Data, and NBA Team Stats from Kaggle and place in `data/` folder. 
+
+3. From `src/` directory run:
 
 `python3 main.py `
 
-Results will appear in `results/` folder. All obtained will be stored in `data/`
+4. Results will appear in `results/` folder. All obtained will be stored in `data/`
 
-# Running Notebokks
+# Running Notebooks
 
-No other files are required to run prior to the notebooks. Input of date and game will be needed by user on notebook #11 and #12. 
+No other files are required to run prior to the notebooks. Input of date and game will be needed by user on notebook cells #11 and #12. 

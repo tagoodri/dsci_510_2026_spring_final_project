@@ -141,6 +141,7 @@ def plot_espn_vs_model(my_probs, plays, home_team, away_team, home_team_color):
         espn_probs.append(play['espn_win_percentage'])
         
     plt.axhline(0.5, color='gray', linestyle='--') # line to mark 50% threshold, putting first so in background
+    plt.fill_between(elapsed, my_probs, espn_probs, alpha=0.4, color='lightblue') # *added post presentation* showing the difference between the two models at any given time 
     plt.plot(elapsed, my_probs, label="My Model", color = f'#{home_team_color}') #putting hex color code of home team 
     plt.plot(elapsed, espn_probs, label="ESPN Model", color = 'black') #just making this one black so not any confusion w/ colors
     plt.title(f'{home_team} vs {away_team}')
@@ -174,7 +175,7 @@ def plot_home_away_wins(df):
     plt.close()
     print("Saved: home_away_wins.png")
 
-#*** AI USE: Asked AI (Claude) to help build me a graph that followed the structure of a previous one I had inputted, but tracked the lead better for 5 and 10 point leads***
+#*** AI GENERATED, AI USE: Asked AI (Claude) to help build me a graph that followed the structure of a previous one I had inputted, but tracked the lead better for 5 and 10 point leads***
 def plot_lead_win_rate(df):
     # checking win rate during all 4 quarters when up by 5 and when up by 10, trying as way to standardize
 
@@ -285,7 +286,7 @@ def plot_payroll_vs_winrate(payroll_df, win_pct_df):
 
 
 
-# *** AI USE: Prompted AI (Claude) to give me a graph similar to the ones I had already created that shows different 'buckets' and tiers of salary and win rate***
+# *** AI GENERATED, AI USE: Prompted AI (Claude) to give me a graph similar to the ones I had already created that shows different 'buckets' and tiers of salary and win rate***
 # Not using for presentation, just for own findings to see impact/differences in payroll 
 def plot_winrate_by_payroll_tier(payroll_df, win_pct_df):
 

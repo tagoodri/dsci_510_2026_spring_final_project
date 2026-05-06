@@ -5,7 +5,7 @@ This project aims to predict the outcome of an NBA game. I utilize both historic
 I am currently using Kaggle NBA play-by-play data from seasons ranging from 2015-2021. [Kaggle NBA PBP](https://www.kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019)
 I also used ESPN play-by-play data. As a test, I fetched the [Lakers vs. Timberwolves](https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event=401810801) game from March 10, 2026 as a proof of concept, but the notebook allows you to choose any matchup.
  Lastly, I utilized an NBA payroll dataset from [Kaggle](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data). I inputted team salaries myself for this year.
- Not featured in notebooks, but also implemented in additional visualizations was a historic collection of team records from [Kaggle](https://www.kaggle.com/datasets/mharvnek/nba-team-stats-00-to-18)
+ Not featured in notebooks, but also implemented in additional visualizations was a historic collection of team records from [Kaggle].(https://www.kaggle.com/datasets/mharvnek/nba-team-stats-00-to-18)
 
 | # | Name | Source URL | Type | Fields | Format | Estimated Size |
 |---|------|-----------|------|--------|--------|---------------|

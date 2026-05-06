@@ -6,7 +6,7 @@ from load import load_payroll
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, mean_squared_error
-from config import results_dir, test_size, random_state, plot_size, plot_size_smallish
+from config import results_dir, test_size, random_state, plot_size, plot_size_smallish, current_season_year
 
 
 def show_correlations(df):
@@ -41,7 +41,7 @@ def train_model(df):
 def get_team_payroll(team):
     # Main Payroll stuff
     payrolls = load_payroll()
-    value = payrolls.loc[(payrolls['team'] == team) & (payrolls['seasonStartYear'] == 2025), 'inflationAdjPayroll'] #using loc from class
+    value = payrolls.loc[(payrolls['team'] == team) & (payrolls['seasonStartYear'] == current_season_year), 'inflationAdjPayroll'] #using loc from class
     team_payroll = value.values[0]
     return team_payroll
 

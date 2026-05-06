@@ -13,11 +13,12 @@ win_pct_path = os.path.join(data_dir, "Win_Pct.csv")
 espn_scoreboard_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={}'
 espn_game_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={}'
 
-# Model Settings & plot sizes
+# Model Settings, Year, & plot sizes
 test_size = 0.2 #makes training model 80%
 random_state = 42 #common random state #?
 plot_size = (10,6)
 plot_size_smallish = (8,6)
+current_season_year = 2025
 
 # Game Settings 
 regulation_quarters = 4

@@ -10,8 +10,8 @@ payroll_path = os.path.join(data_dir, "Payrolls.csv")
 win_pct_path = os.path.join(data_dir, "Win_Pct.csv")
 
 #data sources configs
-espn_scoreboard_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={}'
-espn_game_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={}'
+espn_scoreboard_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates='
+espn_game_url = 'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event='
 
 # Model Settings, Year, & plot sizes
 test_size = 0.2 #makes training model 80%

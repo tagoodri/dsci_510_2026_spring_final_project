@@ -45,7 +45,7 @@ def min_to_sec(minutes):
 
 def play_by_play_url(game_id):
     # when give correct game id, shows the ESPN play-by-play url
-    return f'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={game_id}'
+    return f'{espn_game_url}{game_id}'
 
 def get_games_on_date(date):
     #making it easier for ESPN data and with the widget 
@@ -60,7 +60,7 @@ def get_games_on_date(date):
         formattedDay = date.day
 
     date_string = f'{date.year}{formattedMonth}{formattedDay}'
-    url = f'https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates={date_string}'
+    url = f'{espn_scoreboard_url}{date_string}'
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()

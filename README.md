@@ -44,5 +44,7 @@ Claude AI was also used to assist in parts of this project. They are labeled as 
 4. Results will appear in `results/` folder. All obtained will be stored in `data/`
 
 # Running Notebooks
-
-No other files are required to run prior to the notebooks. Input of date and game will be needed by user on notebook cells #11 and #12. 
+1. Ensure all datasets are downloaded from above (How to Run)
+2. Open `src/results.ipynb` in Jupyter
+3. Do `Restart & Run All` to run all cells
+4. User input required at cells 11 and 12 for date and game selection (may show error at first if date not inputted)

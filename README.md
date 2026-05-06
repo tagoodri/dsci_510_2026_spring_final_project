@@ -32,7 +32,10 @@ Claude AI was also used to assist in parts of this project. They are labeled as 
 # How to run
 1. Install all requirements from `requirements.txt`
 
-2. Download the [Kaggle NBA PBP](https://www.kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019), [Kaggle Salaries](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data), and [Kaggle Win % Info](https://www.kaggle.com/datasets/mharvnek/nba-team-stats-00-to-18) and place in `data/` 
+2. Download the following datasets and place in `data/` 
+   - [Kaggle NBA PBP](https://www.kaggle.com/datasets/schmadam97/nba-playbyplay-data-20182019) 
+   - [Kaggle Salaries](https://www.kaggle.com/datasets/loganlauton/nba-players-and-team-data) - rename to `Payrolls.csv`
+   - [Kaggle Win % Info](https://www.kaggle.com/datasets/mharvnek/nba-team-stats-00-to-18) - rename to `Win_Pct.csv`
 
 3. From `src/` directory run:
 

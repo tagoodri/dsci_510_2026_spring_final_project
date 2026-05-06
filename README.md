@@ -48,3 +48,4 @@ Claude AI was also used to assist in parts of this project. They are labeled as 
 2. Open `src/results.ipynb` in Jupyter
 3. Do `Restart & Run All` to run all cells
 4. User input required at cells 11 and 12 for date and game selection (may show error at first if date not inputted)
+5. On completion, a graph will be created displaying a play-by-play win probability for the home team throughout the selected game, with a comparison to ESPN's model too. 

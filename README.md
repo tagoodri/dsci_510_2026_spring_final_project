@@ -39,7 +39,7 @@ Claude AI was also used to assist in parts of this project. They are labeled as 
 
 3. From `src/` directory run:
 
-`python3 main.py `
+  `python3 main.py `
 
 4. Results will appear in `results/` folder. All obtained will be stored in `data/`
 

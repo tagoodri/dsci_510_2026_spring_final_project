@@ -142,7 +142,12 @@ def plot_espn_vs_model(my_probs, plays, home_team, away_team, home_team_color):
         
     plt.axhline(0.5, color='gray', linestyle='--') # line to mark 50% threshold, putting first so in background
     plt.fill_between(elapsed, my_probs, espn_probs, alpha=0.4, color='lightblue') # *added post presentation* showing the difference between the two models at any given time 
-    plt.plot(elapsed, my_probs, label="My Model", color = f'#{home_team_color}') #putting hex color code of home team 
+    if home_team == 'San Antonio': # San Antonio Spurs hex color is black, can cause confusion
+        color = 'orange'
+    else:
+        color = f'#{home_team_color}'
+
+    plt.plot(elapsed, my_probs, label="My Model", color = color) #putting hex color code of home team 
     plt.plot(elapsed, espn_probs, label="ESPN Model", color = 'black') #just making this one black so not any confusion w/ colors
     plt.title(f'{home_team} vs {away_team}')
     plt.ylabel(f'Home Win Probability ({home_team})')
